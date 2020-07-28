@@ -14,7 +14,7 @@
 .authorbox p a,
 .pp a,
 .sitemap-wrapper small,
-.fa-user-circle-o,
+.fa-envelope,
 .footer h5:hover,
 a:hover,
 a:focus,
@@ -136,7 +136,7 @@ a:focus,
     color: #fbb034;
 }
 
-.topsocial .fa.fa-facebook {
+.topsocial .fa.fa-facebook,.topsocial .fa.fa-facebook-square {
     color: #4b6ea9;
 }
 
@@ -157,7 +157,7 @@ a:focus,
     color: #d73533;
 }
 
-.topsocial .fa.fa-youtube {
+.topsocial .fa.fa-youtube,.topsocial  .fa.fa-youtube-play{
     color: #d44638;
 }
 

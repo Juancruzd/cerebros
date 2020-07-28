@@ -15,6 +15,20 @@
         $('#nav-close').on('click', function(e) {
             e.preventDefault();
             $('body').removeClass('nav-expanded');
+        }); 
+        $(document.getElementById("btnsearch")).on('click', function(e) {
+            e.preventDefault(); 
+            var idiconsearch=document.getElementById("iconsearch");
+            var changer=0; 
+            if(idiconsearch.className=='fa fa-search' && changer==0){
+                idiconsearch.className='fa fa-window-close'; 
+                changer=1;
+            }
+            if(idiconsearch.className=='fa fa-window-close' && changer==0){
+                idiconsearch.className='fa fa-search';
+                changer=1;
+            }
+           
         });
     });
 

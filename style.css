@@ -696,6 +696,7 @@ div.tab button:hover {
     -ms-transition: all .7s ease-in-out;
     transition: all .7s ease-in-out;
     overflow: auto;
+    border-radius: 50%;
 }
 
 
@@ -1523,19 +1524,20 @@ hr.invis3 {
     position: absolute;
     right: 4%;
     border: 0 !important;
-    border-left: 1px solid #555555 !important;
-    color: #555555 !important;
+    border-left: 1px solid #fff !important;
+    color: #fff !important;
     font-size: 24px;
     background-color: transparent !important;
     height: 54px;
     padding-left: 1rem;
     padding-right: 1rem;
+    cursor: pointer;
 }
 
 .top-search .newsletter-widget .form-inline .form-control {
     background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
     border: 0 none;
-    color: #555555;
+    color: #fff;
     font-size: 24px;
     width: 100%;
 }
