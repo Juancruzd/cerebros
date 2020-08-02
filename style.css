@@ -243,7 +243,15 @@ a {
 
 .topbar-section a:focus,
 .topbar-section a:hover {
-    color: rgba(0, 0, 0, 1) !important;
+    color: rgba(0, 0, 0, 1) !important;  
+    /**************************************
+    Evento links animacion
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    **************************************/
 }
 
 .topbar-section .list-inline {
@@ -1530,8 +1538,7 @@ hr.invis3 {
     background-color: transparent !important;
     height: 54px;
     padding-left: 1rem;
-    padding-right: 1rem;
-    cursor: pointer;
+    padding-right: 1rem; 
 }
 
 .top-search .newsletter-widget .form-inline .form-control {
@@ -1606,6 +1613,7 @@ hr.invis3 {
     height: 54px;
     border-radius: 0;
     border: 0;
+    cursor: pointer;
 }
 
 .newsletter-widget .btn i {
@@ -1639,8 +1647,7 @@ hr.invis3 {
 .link-widget li span {
     position: absolute;
     right: 0;
-}
-
+} 
 .loader {
     display: block;
     margin: 20px auto 0;

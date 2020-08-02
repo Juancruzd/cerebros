@@ -1,8 +1,8 @@
 /**************************************
     File Name: custom.js
-    Template Name: Cloapedia
-    Created By: HTML.Design
-    http://themeforest.net/user/wpdestek
+    Web Site: Cerebros
+    Created By: CerebrosTI
+    http://cerebrosg.com
 **************************************/
 
 (function($) {
@@ -16,6 +16,7 @@
             e.preventDefault();
             $('body').removeClass('nav-expanded');
         }); 
+
         $(document.getElementById("btnsearch")).on('click', function(e) {
             e.preventDefault(); 
             var idiconsearch=document.getElementById("iconsearch");
@@ -28,8 +29,8 @@
                 idiconsearch.className='fa fa-search';
                 changer=1;
             }
-           
         });
+
     });
 
     $(function() {
