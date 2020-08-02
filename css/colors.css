@@ -137,38 +137,38 @@ a:focus,
 }
 
 .topsocial .fa.fa-facebook,.topsocial .fa.fa-facebook-square {
-    color: #4b6ea9;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .topsocial .fa.fa-google-plus {
-    color: #e86142;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .topsocial .fa.fa-twitter {
-    color: #1ab2f5;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .topsocial .fa.fa-linkedin {
-    color: #0088c0;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .fa-bolt,
 .topsocial .fa.fa-pinterest {
-    color: #d73533;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .topsocial .fa.fa-youtube,.topsocial  .fa.fa-youtube-play{
-    color: #d44638;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .topsocial .fa.fa-instagram {
-    color: #405de6;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .topsocial .fa.fa-flickr {
-    color: #ff0084;
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .footer.wb .btn {
-    color: rgba(255, 255, 255, 1) !important;
+    color: rgb(3, 3, 3) !important;
 }
