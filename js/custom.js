@@ -30,6 +30,10 @@
                 changer=1;
             }
         });
+        $(document.getElementsByClassName("nav-link")).hover(function() { 
+            var color =$(this).css('color');
+            document.documentElement.style.setProperty('--border-color-link', color); 
+        });
 
     });
 

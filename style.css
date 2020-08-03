@@ -400,8 +400,39 @@ button.btn-menu-collapse:focus {
 
 .post-media img {
     width: 100%;
-}
-
+} 
+ 
+:root {
+    --border-color-link: purple;
+    --border-width: 4px;
+    --bottom-distance: 0px;
+ }
+.nav-item {
+    
+    /* you can increase this */ 
+    display: inline-block;
+    background-image: linear-gradient(var(--border-color-link), var(--border-color-link));
+    background-size: 0% var(--border-width);
+    background-repeat: no-repeat;
+    transition: background-size 0.3s;
+    margin: 5px 0;
+  }
+  
+  .nav-item {
+    background-position: 50% calc(100% - var(--bottom-distance));
+  }
+  /**
+  .fromRight {
+    background-position: 100% calc(100% - var(--bottom-distance));
+  }
+  
+  .fromLeft {
+    background-position: 0 calc(100% - var(--bottom-distance))
+  }
+  **/
+  .nav-item:hover {
+    background-size: 100% var(--border-width);
+  }
 
 /* Style the tab */
 
