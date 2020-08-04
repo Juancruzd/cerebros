@@ -226,7 +226,11 @@ a {
 }
 
 .header-section {
-    margin-bottom: 0; 
+    margin-bottom: 0;  
+    margin-top: -15px; 
+    width: 430px;
+    height: 58px;
+    margin: 6px auto;
 }
 .topsocial .fa {
     margin-right: 0.5rem;
