@@ -42,8 +42,7 @@
         $(".navbar-nav li a.active")[0].parentNode.setAttribute("style",'background-size:100% var(--border-width);background-image:linear-gradient('+coloractive+','+coloractive+')');
         }
     });
-
-
+    
     ///
     ///Cambiar el color de la animacion de los hover links del menu obteniendo el valor de 
     ///color de cada link al hacer hover
@@ -59,6 +58,9 @@
             } 
     });
 
+    $(window).resize(function () { 
+        location.reload();
+    });
 
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
