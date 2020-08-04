@@ -1,0 +1,18 @@
+divisiones
+
+border-bottom: 1px solid #e2e2e2;
+
+margin-bottom: 18px;
+    padding-top: 18px;
+    border-top: 1px solid #121212;
+
+
+
+
+
+
+header menu
+    
+border-top: 1px solid #ebebeb;
+    padding: 0 60px; 
+    border-bottom: 1px solid #000;

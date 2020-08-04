@@ -3,6 +3,7 @@
     Web Site: Cerebros
     Created By: CerebrosTI
     http://cerebrosg.com
+
 **************************************/
 
 (function($) {
@@ -16,7 +17,9 @@
             e.preventDefault();
             $('body').removeClass('nav-expanded');
         }); 
-
+        ///
+        ///Cambiar el icono del boton de buscar al hacer clikc
+        ///
         $(document.getElementById("btnsearch")).on('click', function(e) {
             e.preventDefault(); 
             var idiconsearch=document.getElementById("iconsearch");
@@ -30,12 +33,32 @@
                 changer=1;
             }
         });
-        $(document.getElementsByClassName("nav-link")).hover(function() { 
-            var color =$(this).css('color');
-            document.documentElement.style.setProperty('--border-color-link', color); 
-        });
-
+        ///
+        ///Muestra el color de la pagina seleccionada en el link correspondiente solo si el ancho del dispositivo
+        ///es mayor a 1024
+        if(window.screen.width >= 1024){
+        var coloractive=$(".navbar-nav li a.active").css('color');
+        document.documentElement.style.setProperty('--border-color-link', coloractive);  
+        $(".navbar-nav li a.active")[0].parentNode.setAttribute("style",'background-size:100% var(--border-width);background-image:linear-gradient('+coloractive+','+coloractive+')');
+        }
     });
+
+
+    ///
+    ///Cambiar el color de la animacion de los hover links del menu obteniendo el valor de 
+    ///color de cada link al hacer hover
+    /// 
+    $(document.getElementsByClassName("nav-link")).hover(function() { 
+            var class_name = $(this).attr('class').split( ' ' )[2]; 
+            var color =$(this).css('color');
+            if(class_name==="active"){
+            document.documentElement.style.setProperty('--border-color-link', color);
+            $(this).css('background-size','100% var(--border-width)');  
+            }else{
+            document.documentElement.style.setProperty('--border-color-link', color);
+            } 
+    });
+
 
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()

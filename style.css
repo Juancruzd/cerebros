@@ -403,39 +403,51 @@ button.btn-menu-collapse:focus {
 } 
  
 :root {
-    --border-color-link: purple;
+    --border-color-link: #fff;
     --border-width: 4px;
     --bottom-distance: 0px;
  }
-.nav-item {
-    
-    /* you can increase this */ 
+.nav-item { 
     display: inline-block;
     background-image: linear-gradient(var(--border-color-link), var(--border-color-link));
     background-size: 0% var(--border-width);
     background-repeat: no-repeat;
     transition: background-size 0.3s;
     margin: 5px 0;
-  }
-  
-  .nav-item {
-    background-position: 50% calc(100% - var(--bottom-distance));
-  }
-  /**
-  .fromRight {
-    background-position: 100% calc(100% - var(--bottom-distance));
-  }
-  
-  .fromLeft {
+}
+.nav-item {
     background-position: 0 calc(100% - var(--bottom-distance))
-  }
+}
+/**
+.nav-item {
+    background-position: 50% calc(100% - var(--bottom-distance));
+}
+  
+.nav-item {
+    background-position: 100% calc(100% - var(--bottom-distance));
+}
+  
+.nav-item {
+    background-position: 0 calc(100% - var(--bottom-distance))
+}
   **/
   .nav-item:hover {
-    background-size: 100% var(--border-width);
-  }
+    background-size: 0% var(--border-width);
+  } 
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1024px) { 
+    .nav-item:hover {
+        background-size: 100% var(--border-width);
+      } 
+} 
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+    .nav-item:hover {
+        background-size: 100% var(--border-width);
+      } 
+ }
 
 /* Style the tab */
-
 div.tab {
     float: left;
     padding: 2rem 0;
@@ -558,7 +570,7 @@ div.tab button:hover {
 }
 
 .section-title h3 a {
-    border-radius: 3px;
+    /**border-radius: 3px;**/
     color: #fff !important;
     font-size: 16px;
     line-height: 1;
@@ -697,7 +709,7 @@ div.tab button:hover {
 
 .masonry-box .blog-meta span {
     background-color: #111111;
-    border-radius: 3px;
+    /**border-radius: 3px;**/
     font-size: 12px;
     padding: 0.1rem 1rem;
 }
