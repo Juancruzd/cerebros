@@ -294,7 +294,20 @@ a {
     line-height: 1rem;
     font-weight: 500;
 }
-
+/* area de boton de busqueda y menu ----------- */
+.topsearch{
+    text-align: center;
+} 
+@media only screen and (min-width : 768px) { 
+    .topsearch{
+        text-align: left;
+    }
+}  
+@media only screen and (min-width : 1824px) {
+    .topsearch{
+        text-align: left;
+    } 
+ }
 /* Boton de busqueda ----------- */
 .btn-search{
     border-radius: 3px;
@@ -322,6 +335,7 @@ a {
 .btn-search:hover{
     background-color: #f7f7f7; 
 }
+
 
 /* Boton menu lateral derecho ----------- */
 .btn-menu-rigth-display{
