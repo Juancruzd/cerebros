@@ -202,11 +202,24 @@ a {
     border-bottom: 1px solid #f5f5f5;
 }
 
-.header .dropdown-item {
-    font-weight: 400;
-    text-transform: capitalize;
-    font-size: 14px;
-    padding: 4px 1.8rem;
+.header .dropdown-item { 
+    text-transform: capitalize; 
+    font-family: helvetica,arial,sans-serif;
+    -webkit-transition: ease 0.6s;
+    transition: ease 0.6s;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: transparent;
+    color: #000;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    -webkit-letter-spacing: 0.02em;
+    -moz-letter-spacing: 0.02em;
+    -ms-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
+    padding: 8px 9px 9px;
+    border: 0; 
 }
  
 .header .dropdown-item:hover,
@@ -222,15 +235,13 @@ a {
 .header .dropdown-item span {
     position: absolute;
     right: 20px;
-    top: 2px;
+    /*top: 2px;*/
+    top: 30%;
 }
 
 .header-section {
-    margin-bottom: 0;  
-    margin-top: -15px; 
-    width: 430px;
-    height: 58px;
-    margin: 6px auto;
+    margin-bottom: 0; 
+    
 }
 .topsocial .fa {
     margin-right: 0.5rem;
@@ -283,6 +294,8 @@ a {
     line-height: 1rem;
     font-weight: 500;
 }
+
+/* Boton de busqueda ----------- */
 .btn-search{
     border-radius: 3px;
     cursor: pointer;
@@ -306,9 +319,47 @@ a {
 .btn-search:hover{
     background-color: #f7f7f7; 
 }
-.btn-search:hover,.btn-menu-collapse:hover{
+.btn-search:hover{
     background-color: #f7f7f7; 
 }
+
+/* Boton menu lateral derecho ----------- */
+.btn-menu-rigth-display{
+    display: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: helvetica,arial,sans-serif;
+    -webkit-transition: ease 0.6s;
+    transition: ease 0.6s;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: transparent;
+    color: #000;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    -webkit-letter-spacing: 0.02em;
+    -moz-letter-spacing: 0.02em;
+    -ms-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
+    padding: 8px 9px 9px;
+    border: 0;
+}
+.btn-menu-rigth-display:hover{
+    background-color: #f7f7f7; 
+}
+@media only screen and (min-width : 1024px) { 
+   .btn-menu-rigth-display{
+       display: inline-block;
+   }
+} 
+@media only screen and (min-width : 1824px) {
+   .btn-menu-rigth-display{
+       display: inline-block;
+   }
+}
+
+/* Boton menu collapse mobile ----------- */
 .btn-menu-collapse{
     cursor: pointer;
     font-family: helvetica,arial,sans-serif; 
@@ -324,6 +375,9 @@ a {
     text-transform: uppercase; 
     padding: 8px 9px 9px;
 }
+.btn-menu-collapse:hover{
+    background-color: #f7f7f7; 
+}
 .btn-menu-collapse svg{   
     display: inline-block;
     width: 1.5em;
@@ -335,11 +389,11 @@ a {
     background-size: 100% 100%;
 } 
 button.btn-menu-collapse:active {
-    border: 1px solid #333; 
+    border: 1px solid #000; 
     outline:0;
 }
 button.btn-menu-collapse:focus {
-    border: 1px solid #333; 
+    border: 1px solid #000; 
     outline:0;
 }
 /**.iconbrain { 
@@ -495,6 +549,16 @@ div.tab button {
     border-bottom: 1px solid transparent;
     line-height: 1;
     text-transform: capitalize;
+
+    font-family: helvetica,arial,sans-serif;  
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    -webkit-letter-spacing: 0.02em;
+    -moz-letter-spacing: 0.02em;
+    -ms-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;
+    padding: 8px 9px 9px; 
 }
 
 

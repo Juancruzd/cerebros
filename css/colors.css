@@ -56,6 +56,16 @@ a:focus,
 /* OTHER COLORS 
 **************************************/
 
+/* navbar-nav */
+.navbar-nav .nav-link.active.color-black-hover,
+.navbar-nav .nav-link.color-black-hover:hover,
+.navbar-nav .nav-link.color-black-hover:focus {
+    color: #000 !important;
+}
+.color-black a {
+    background-color: #000 !important;
+}
+
 .navbar-nav .nav-link.active.color-pink-hover,
 .navbar-nav .nav-link.color-pink-hover:hover,
 .navbar-nav .nav-link.color-pink-hover:focus {
