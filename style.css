@@ -26,6 +26,7 @@ body {
     font-size: 15px;
     line-height: 26px;
     background-color: #ffffff;
+    font-family: helvetica,arial,sans-serif;
 }
 
 h1,
@@ -403,11 +404,11 @@ a {
     background-size: 100% 100%;
 } 
 button.btn-menu-collapse:active {
-    border: 1px solid #000; 
+    border: 2px solid #000; 
     outline:0;
 }
 button.btn-menu-collapse:focus {
-    border: 1px solid #000; 
+    border: 2px solid #000; 
     outline:0;
 }
 /**.iconbrain { 
