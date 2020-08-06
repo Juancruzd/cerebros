@@ -338,8 +338,8 @@ a {
 }
 
 
-/* Boton menu lateral derecho ----------- */
-.btn-menu-rigth-display{
+/* Boton y menu lateral ----------- */
+.btn-menu-display{
     display: none;
     border-radius: 3px;
     cursor: pointer;
@@ -360,20 +360,19 @@ a {
     padding: 8px 9px 9px;
     border: 0;
 }
-.btn-menu-rigth-display:hover{
+.btn-menu-display:hover{
     background-color: #f7f7f7; 
 }
 @media only screen and (min-width : 1024px) { 
-   .btn-menu-rigth-display{
-       display: inline-block;
-   }
-} 
-@media only screen and (min-width : 1824px) {
-   .btn-menu-rigth-display{
-       display: inline-block;
-   }
-}
-
+    .btn-menu-display{
+        display: inline-block;
+    } 
+ } 
+ @media only screen and (min-width : 1824px) {
+    .btn-menu-display{
+        display: inline-block;
+    } 
+ }
 /* Boton menu collapse mobile ----------- */
 .btn-menu-collapse{
     cursor: pointer;
