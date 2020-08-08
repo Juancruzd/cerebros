@@ -1,9 +1,9 @@
 /**************************************
 
-    File Name: style.css
-    Template Name: Cloapedia
-    Created By: HTML.Design
-    http://themeforest.net/user/wpdestek
+    File Name: style.css 
+    Web Site: Cerebros
+    Created By: CerebrosTI
+    http://cerebrosg.com
 
 **************************************/
 
@@ -155,7 +155,7 @@ a {
  .date-brain-header{ 
     padding-top: 20px; 
     z-index: 9999; 
-    text-transform: capitalize;
+    text-transform: lowercase;
     color: #121212;
     display: inline-block;
     font-family: helvetica,arial,sans-serif;
@@ -180,7 +180,7 @@ a {
      
  }  
  
- @media only screen and (min-width : 1024px) { 
+@media only screen and (min-width : 1024px) { 
     .data-brain-header-display{ 
         display: block;
     }
@@ -432,8 +432,7 @@ a {
     text-transform: capitalize; 
     font-family: helvetica,arial,sans-serif;
     -webkit-transition: ease 0.6s;
-    transition: ease 0.6s;
-    white-space: nowrap;
+    transition: ease 0.6s; 
     vertical-align: middle;
     background-color: transparent;
     color: #000;
@@ -540,8 +539,7 @@ a {
     cursor: pointer;
     font-family: helvetica,arial,sans-serif;
     -webkit-transition: ease 0.6s;
-    transition: ease 0.6s;
-    white-space: nowrap;
+    transition: ease 0.6s; 
     vertical-align: middle;
     background-color: transparent;
     color: #000;
@@ -570,8 +568,7 @@ a {
     cursor: pointer;
     font-family: helvetica,arial,sans-serif;
     -webkit-transition: ease 0.6s;
-    transition: ease 0.6s;
-    white-space: nowrap;
+    transition: ease 0.6s; 
     vertical-align: middle;
     background-color: transparent;
     color: #000;
@@ -602,7 +599,6 @@ a {
 .btn-menu-collapse{
     cursor: pointer;
     font-family: helvetica,arial,sans-serif; 
-    white-space: nowrap; 
     border: 1px solid #333; 
     font-size: 11px;
     line-height: 11px;
@@ -616,6 +612,7 @@ a {
 }
 .btn-menu-collapse:hover{
     background-color: #f7f7f7; 
+    font-size: smaller;
 }
 .btn-menu-collapse svg{   
     display: inline-block;
@@ -626,6 +623,16 @@ a {
     background: no-repeat center center;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
+    margin-bottom: 1px;
+}
+.btn-menu-collapse span{    
+    color: #292b2c;
+    font-size: unset;
+    padding-top: 0px;
+    padding: 10px 0px;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-weight: 700;
 } 
 button.btn-menu-collapse:active {
     border: 2px solid #000; 
@@ -735,7 +742,32 @@ button.btn-menu-collapse:focus {
 .post-media img {
     width: 100%;
 } 
- 
+.nav-item { 
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: helvetica,arial,sans-serif;
+    -webkit-transition: ease 0.6s;
+    transition: ease 0.6s; 
+    vertical-align: middle;
+    background-color: transparent;
+    color: #000;
+    font-size: 11px;
+    line-height: 11px;
+    font-weight: 700;
+    -webkit-letter-spacing: 0.02em;
+    -moz-letter-spacing: 0.02em;
+    -ms-letter-spacing: 0.02em;
+    letter-spacing: 0.02em;  
+    border: 0;
+    margin: 4px;
+}
+.nav-link:hover,.nav-item:hover,
+.nav-link:focus,.nav-item:focus{
+    background-color: #f7f7f7; 
+    color: #121212 !important;
+}
+/**animacion menu item**/
+/**
 :root {
     --border-color-link: #fff;
     --border-width: 4px;
@@ -752,8 +784,21 @@ button.btn-menu-collapse:focus {
 .nav-item {
     background-position: 0 calc(100% - var(--bottom-distance))
 }
+.nav-item:hover {
+    background-size: 0% var(--border-width);
+  }  
+@media only screen and (min-width : 1024px) { 
+    .nav-item:hover {
+        background-size: 100% var(--border-width);
+      } 
+}  
+@media only screen and (min-width : 1824px) {
+    .nav-item:hover {
+        background-size: 100% var(--border-width);
+      } 
+ }
+**/
 /**
-
 .nav-item {
     background-position: 50% calc(100% - var(--bottom-distance));
 }
@@ -766,21 +811,7 @@ button.btn-menu-collapse:focus {
     background-position: 0 calc(100% - var(--bottom-distance))
 }
   **/
-  .nav-item:hover {
-    background-size: 0% var(--border-width);
-  } 
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1024px) { 
-    .nav-item:hover {
-        background-size: 100% var(--border-width);
-      } 
-} 
-/* Large screens ----------- */
-@media only screen and (min-width : 1824px) {
-    .nav-item:hover {
-        background-size: 100% var(--border-width);
-      } 
- }
+  
 
 /* Style the tab */
 div.tab {
