@@ -29,17 +29,26 @@
         ///
         $(document.getElementById("btnsearch")).on('click', function(e) {
             e.preventDefault(); 
+            cambiariconobusquedackclick();
+        });
+        $(document.getElementsByClassName("btn-menu-display")).on('click', function(e) {
+            e.preventDefault(); 
+            if(document.getElementById("iconsearch").className=='fa fa-times'){
+                cambiariconobusquedackclick();
+            } 
+        });
+        function cambiariconobusquedackclick(){
             var idiconsearch=document.getElementById("iconsearch");
             var changer=0; 
             if(idiconsearch.className=='fa fa-search' && changer==0){
-                idiconsearch.className='fa fa-times'; 
+                idiconsearch.className='fa fa-times';  
                 changer=1;
             }
             if(idiconsearch.className=='fa fa-times' && changer==0){
                 idiconsearch.className='fa fa-search';
                 changer=1;
             }
-        });
+        }
         ///
         ///Muestra el color de la pagina seleccionada en el link correspondiente solo si el ancho del dispositivo
         ///es mayor a 1024
@@ -66,10 +75,10 @@
             } 
     });
     */
-
+    /*
     $(window).resize(function () { 
         location.reload();
-    });
+    });*/
 
     $(function() {
         $('[data-toggle="tooltip"]').tooltip()
